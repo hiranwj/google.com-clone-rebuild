@@ -46,7 +46,7 @@ h6{
 
 :root{
     --header-height: 50px;
-    --nav-width: 150px;
+    --nav-width: 160px;
     --layout-border-color: lightgray;
 }
 
@@ -163,4 +163,36 @@ h6{
 #smi-container .smi-icons:hover{
     color: white;
     width: 130px;
+}
+
+/* Navigation */
+
+#nav>ul{
+    /* background-color: teal; */
+}
+
+#nav ul li{
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--layout-border-color);
+}
+
+#nav ul li:hover{
+    border-left: 3px solid red;
+}
+
+#nav ul li span{
+    transition: margin-left 0.8s cubic-bezier(0.35,-0.06, 0.27, 1.69);
+}
+
+#nav ul li:hover>span{
+    background-color: #d3d3d3;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.sub-menu{
+    display: none;
 }
