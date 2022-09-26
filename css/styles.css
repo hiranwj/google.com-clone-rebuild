@@ -1,0 +1,166 @@
+@import url(../css/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.clearfix{
+    clear: both;
+}
+
+/* Typography */
+
+h1{
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+h2{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+h3{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+h4{
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+h5{
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
+
+h6{
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+}
+
+/* Layouts */
+
+:root{
+    --header-height: 50px;
+    --nav-width: 150px;
+    --layout-border-color: lightgray;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* height: 100px; */
+    height: var(--header-height);
+    background-color: rgba(255, 255, 255, 0.87);
+    border-bottom: 1px solid var(--layout-border-color);
+}
+
+#nav{
+    position: fixed;
+    left: 0;
+    top: var(--header-height);
+    bottom: 0;
+    width: var(--nav-width);
+    /* background-color: aqua; */
+    border-right: 1px solid var(--layout-border-color);
+}
+
+#main{
+    /* background-color: goldenrod; */
+    margin-left: var(--nav-width);
+    margin-top: var(--header-height);
+}
+
+#footer{
+    text-align: center;
+    border-top: 1px solid var(--layout-border-color);
+    padding: 10px 10px 15px;
+}
+
+#logo{
+    padding-left: 10px;
+}
+
+#smi-container{
+    /* background-color: red; */
+    float: right;
+    height: var(--header-height);
+
+}
+
+#smi-container .smi-icons{
+    /* display: inline-block; */
+    float: left;
+    width: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 100%;
+    height: 100%;
+    /* background-color: greenyellow; */
+    padding: 15px 10px;
+    cursor: pointer;
+    transition: background-color 800ms, width 1s;
+    font-weight: 500;
+    text-align: center;
+}
+
+#smi-container .smi-icons:nth-child(1):hover{
+    background-color: #6567a5;
+    
+}
+
+#smi-container .smi-icons:nth-child(2):hover{
+    background-color: #0e76a8;
+    
+}
+
+#smi-container .smi-icons:nth-child(3):hover{
+    background-color: #3f729b;
+    
+}
+
+#smi-container .smi-icons:nth-child(4):hover{
+    background-color: #00acee;
+    
+}
+
+#smi-container .smi-icons:nth-child(5):hover{
+    background-color: #c4302b;
+    
+}
+
+#smi-container .smi-icons:nth-child(6):hover{
+    background-color: #444;
+    
+}
+
+#smi-container .smi-icons:nth-child(7):hover{
+    background-color: #6567a5;
+    
+}
+
+#smi-container .smi-icons:not(.smi-icons:last-child){
+    border-right: 1px solid var(--layout-border-color);
+}
+
+#smi-container .smi-icons ion-icon{
+    font-size: 1.4rem;
+    color: #666;
+    padding-right: 10px;
+    vertical-align: sub;
+}
+
+#smi-container .smi-icons:hover ion-icon{
+    color: white;
+}
+
+#smi-container .smi-icons:hover{
+    color: white;
+    width: 130px;
+}
