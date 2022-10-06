@@ -163,7 +163,6 @@ h6{
 /* Main */
 
 #main{
-    /* background-color: goldenrod; */
     margin-left: var(--nav-width);
     margin-top: var(--header-height);
 }
